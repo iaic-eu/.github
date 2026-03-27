@@ -1,3 +1,6 @@
-# IAIC
+# Industrial AI Cloud (IAIC)
 
-Internal infrastructure and tooling.
+Delivering enterprise-grade AI infrastructure for industrial applications.
+
+----
+- [T-Systems](https://www.t-systems.com/)
