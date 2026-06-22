@@ -18,7 +18,28 @@ body:
     id: infrastructure-notes 
     attributes: 
       label: Technical notes
-      placeholder: Zadajte požadované sieťové segmenty, typy inštancií atď. 
+      placeholder: This Issue should always consists of subissues: 
+      Fill VPN Fact Sheet 
+        - Fill VPN proposal to customer with valid VPN parameters. Magenta fields are filled by IAIC NW team and Blue fields are filled by customer.
+        
+      Configure Tenant TAN 
+        - Configure TAN network part based on documentation on this link.
+        
+      Configure Tenant VPN 
+        - Configure a VPN on inband Firewall with parameters agreed within the fact sheet.
+        
+      Allocate DGX/RTX 
+        - Allocate DGX and/or RTX servers in Netbox.
+        
+      Configure IB/RoCE 
+        - Configure East/West communication and delegate RTX and/or DGX servers based on customer request.
+        
+      Network Confirm VPN Connectivity 
+        - Check full communication (East-West, North-South) BGP session, VLAN configuration and VPN State on each device within the communication.
+        
+      Update Netbox Values for Tenant
+        - Update network components, IP addresses, VLAN tag etc. based on documentation on a link below
+        
   - type: textarea 
     id: subtasks 
     attributes: 
