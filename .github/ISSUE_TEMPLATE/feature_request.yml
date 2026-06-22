@@ -24,7 +24,7 @@ body:
           - Fill VPN proposal to customer with valid VPN parameters. Magenta fields are filled by IAIC NW team and Blue fields are filled by customer.
           
         Configure Tenant TAN 
-          - Configure TAN network part based on documentation on this link.
+          - Configure TAN network part based on documentation on this link. [docs/tenant-config-flow.md]
           
         Configure Tenant VPN 
           - Configure a VPN on inband Firewall with parameters agreed within the fact sheet.
