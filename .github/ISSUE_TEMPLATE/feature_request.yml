@@ -12,8 +12,8 @@ body:
       attributes: 
         label: ID / Tenant name
         placeholder: 
-        validations: 
-          required: true   
+      validations: 
+        required: true   
     - type: textarea 
       id: infrastructure-notes 
       attributes: 
