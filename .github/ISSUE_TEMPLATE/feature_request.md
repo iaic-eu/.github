@@ -10,20 +10,20 @@ body:
   - type: input 
 	id: tenant-id 
 	attributes: 
-	label: ID / Názov Tenanta 
+	label: ID / Tenant name
 	placeholder: 
 	validations: 
 	required: true   
   - type: textarea 
 	id: infrastructure-notes 
 	attributes: 
-		label: Technické poznámky (IP rozsahy, špecifikácie) 
+		label: Technical notes
 		placeholder: Zadajte požadované sieťové segmenty, typy inštancií atď. 
   - type: textarea 
 	id: subtasks 
 	attributes: 
-		label: Kroky pre zriadenie tenanta (Sub-issues) 
-		description: Tieto položky po vytvorení issue premeňte kliknutím na natívne sub-issues. 
+		label: Complete subissues necessary for Tenant creation
+		description: After creating this issue change to native sub-issues
 		value: | 
 			- [ ] Fill VPN Fact Sheet 
 			- [ ] Configure Tenant TAN 
