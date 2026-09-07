@@ -1,6 +1,6 @@
 ---
 name: Decommission - Tenant - Template
-about: Decommission - Tenant - Template
+about: Just template for standard tenant decommission .
 title: '[BUG] '
 labels: bug
 assignees: ''
@@ -10,23 +10,19 @@ assignees: ''
 **Describe the bug**
 POC for this customer has elapsed or customer requested decommission.
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+**Sub-tasks**
+- [ ] Task 1: Move RTX/DGX from Customer Tenant to default Tenant
+- [ ] Task 2: Update Netbox RTX availability
+- [ ] Task 3: Turn off Customer VPN
+- [ ] Task 4: Delete configuration of VPN
 
 **Expected behavior**
-A clear and concise description of what you expected to happen.
-
-**Actual behavior**
-What actually happened.
+Tenant ready for new customer
 
 **Environment:**
-- OS: [e.g. Linux, Windows]
-- Browser: [e.g. Chrome, Firefox]
-- Version: [e.g. 22.04, Windows 11]
+- Firewalls: Fortinet
+- Switches: Cumulus
+- Docementation/Evidence: Netbox
 
 **Additional context**
 Add any other context about the problem here.
