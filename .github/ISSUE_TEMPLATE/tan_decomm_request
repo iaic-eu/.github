@@ -1,0 +1,45 @@
+name: Decommission of an Existing Tenant
+description: Template for standard tenant decommission in IAIC infrastructure
+title: "[Tenant]:  Decommission" 
+labels: ["architecture" ] 
+body: 
+  - type: markdown 
+    attributes: 
+      value: | 
+        This issue is for decommission of an Existing Tenant within the IAIC infrastructure. 
+  - type: input 
+    id: tenant-id 
+    attributes: 
+      label: ID / Tenant name
+      placeholder: 
+    validations: 
+      required: true   
+  - type: textarea 
+    id: infrastructure-notes 
+    attributes: 
+      label: Technical notes
+      value: |
+        This Issue should always consists of subissues: 
+        
+        Move RTX/DGX from Customer Tenant to default Tenant 
+          - Move RTX to Default Tenant + Remove VLAN Tagging on each unused port.
+          
+        Update Netbox RTX availability
+          - Update RTXes in Netbox and set them to Inventory status. Empty Tenant Information and prefix allocation to the date.
+          
+        Turn off Customer VPN
+          - First step, Turning off VPN when customer has no active contract.
+          
+        Delete configuration of VPN
+          - Delete configuration on firewall via ansible script or manually de-configure whole VPN.
+          
+  - type: textarea 
+    id: subtasks 
+    attributes: 
+      label: Complete subissues necessary for Tenant creation
+      description: After creating this issue change to native sub-issues
+      value: | 
+        - [ ] Move RTX/DGX from Customer Tenant to default Tenant
+        - [ ] Update Netbox RTX availability
+        - [ ] Turn off Customer VPN
+        - [ ] Delete configuration of VPN
