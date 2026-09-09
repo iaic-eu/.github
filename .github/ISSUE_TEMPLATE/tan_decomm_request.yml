@@ -25,7 +25,8 @@ body:
           - Move RTX to Default Tenant + Remove VLAN Tagging on each unused port.
           
         Update Netbox RTX availability
-          - Update RTXes in Netbox and set them to Inventory status. Empty Tenant Information and prefix allocation to the date.
+          - Update RTXes in Netbox and set them to Inventory status. 
+          - Set tenant values to default values. Delete tenant to prefix association and update description. 
           
         Turn off Customer VPN
           - First step, Turning off VPN when customer has no active contract.
